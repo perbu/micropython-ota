@@ -9,7 +9,7 @@ class BlinkyLed:
             self.pin.on()
 
     def __init__(self):
-        pin = machine.Pin(2, machine.Pin.OUT)
+        pin = machine.Pin(21, machine.Pin.OUT)
         pin.off()
         self.pin = pin
         tim = machine.Timer(-1)
