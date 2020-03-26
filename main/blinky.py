@@ -16,7 +16,7 @@ class BlinkyLed:
         self.tim = tim
 
     def enable(self):
-        self.tim.init(period=500, mode=machine.Timer.PERIODIC, callback=self.toggle_state)
+        self.tim.init(period=100, mode=machine.Timer.PERIODIC, callback=self.toggle_state)
 
     def disable(self):
         self.tim.deinit()
